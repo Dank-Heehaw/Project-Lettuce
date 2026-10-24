@@ -1,92 +1,95 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "About & Contact",
+  title: "Studio & Contact",
   description:
-    "Get to know Soph Fusco, an independent designer, and get in touch about a project.",
+    "Artist biography, practice notes, and contact details for commissions and collaborations.",
 };
 
 export default function AboutPage() {
   return (
     <main className="about-page">
       <section className="about-hero section-wrap" aria-labelledby="about-title">
-        <p className="eyebrow section-kicker">03 / THE PERSON BEHIND THE PIXELS</p>
+        <p className="eyebrow section-kicker">Studio / About</p>
         <h1 id="about-title">
-          Hello, I’m Soph.
+          Rosa Vale
           <br />
-          <em>Really glad you’re here.</em>
+          <em>Painter of quiet forms.</em>
         </h1>
+
         <div className="about-intro">
           <p className="about-lede">
-            I’m an independent designer who believes the best work feels as
-            good as it looks.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
+
           <div className="about-copy">
             <p>
-              I partner with thoughtful people and small teams to turn big,
-              sometimes messy ideas into clear and memorable brands and digital
-              experiences. My process is collaborative, curious, and grounded
-              in the details.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              posuere, risus et luctus posuere, nibh lectus sagittis ligula,
+              vitae blandit justo lorem vitae nulla. Morbi euismod, risus a
+              rhoncus dignissim, nibh sapien mollis nisl, non pulvinar pede urna
+              a quam.
             </p>
             <p>
-              This space is yours to make your own: add a few lines about your
-              background, the people you love working with, and what makes your
-              approach uniquely yours.
+              Subhead text goes here. Duis consectetur neque a turpis placerat,
+              vitae lacinia nulla interdum. Quisque non nunc a dolor commodo
+              aliquet. Vivamus sed varius est, at vulputate odio.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="about-details section-wrap" aria-label="About Soph">
+      <section className="about-details section-wrap" aria-label="Artist practice">
         <div className="about-detail">
-          <p className="eyebrow">WHAT I DO</p>
+          <p className="eyebrow">Process</p>
           <ul>
-            <li>Visual identity</li>
-            <li>Digital design</li>
-            <li>Art direction</li>
-            <li>Creative collaboration</li>
+            <li>Studies</li>
+            <li>Portraiture</li>
+            <li>Still life</li>
+            <li>Commissions</li>
           </ul>
         </div>
+
         <div className="about-detail">
-          <p className="eyebrow">HOW I WORK</p>
+          <p className="eyebrow">Materials</p>
           <p>
-            With intention, open communication, and a healthy respect for
-            making things a little more delightful.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+            hendrerit tortor nec risus imperdiet vulputate. Donec feugiat
+            imperdiet libero, id congue nibh venenatis vel.
           </p>
         </div>
+
         <div className="about-detail about-detail--note">
-          <span aria-hidden="true">✳</span>
-          <p>Thoughtful by nature. Curious by default.</p>
+          <span aria-hidden="true">✦</span>
+          <p>Subhead text with a quiet, grounded sensibility.</p>
         </div>
       </section>
 
-      <section
-        className="contact-section"
-        id="contact"
-        aria-labelledby="contact-title"
-      >
+      <section className="contact-section" id="contact" aria-labelledby="contact-title">
         <div className="contact-inner section-wrap">
-          <p className="eyebrow">04 / YOUR TURN</p>
+          <p className="eyebrow">Inquiries</p>
           <h2 id="contact-title">
-            Have a good feeling
+            For commissions
             <br />
-            about this?
+            and studies.
           </h2>
           <p>
-            Tell me what you’re dreaming up. I’d love to hear about it.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <a className="button button--light" href="mailto:hello@yourname.com">
-            Say hello <span aria-hidden="true">↗</span>
+          <a className="button button--light" href="mailto:hello@rosavale.studio">
+            hello@rosavale.studio <span aria-hidden="true">↗</span>
           </a>
           <span className="contact-footnote">
-            Replace hello@yourname.com with your email address.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </span>
         </div>
       </section>
 
       <div className="back-to-work section-wrap">
-        <Link className="text-link" href="/#projects">
-          <span aria-hidden="true">←</span> Back to selected work
+        <Link className="text-link" href="/#works">
+          <span aria-hidden="true">←</span> Back to works
         </Link>
       </div>
     </main>

@@ -5,10 +5,10 @@ export default function SiteFooter() {
     <footer className="site-footer">
       <div className="site-footer-inner">
         <Link href="/" className="footer-brand">
-          Soph Fusco <span aria-hidden="true">✳</span>
+          Rosa Vale <span aria-hidden="true">✦</span>
         </Link>
-        <p>Made thoughtfully, one detail at a time.</p>
-        <Link href="/#home">Back to top ↑</Link>
+        <p>Traditional paintings, studies, and commissions.</p>
+        <Link href="/#top">Back to top ↑</Link>
       </div>
     </footer>
   );

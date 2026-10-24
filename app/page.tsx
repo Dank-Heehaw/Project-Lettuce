@@ -1,169 +1,152 @@
-import Image from "next/image";
 import Link from "next/link";
 
-const projects = [
+const works = [
   {
     number: "01",
-    title: "Good Things Grow",
-    category: "Brand identity · Packaging",
-    year: "2025",
-    image: "/projects/good-things-grow.svg",
-    alt: "Colorful flower illustration for the Good Things Grow identity",
-    className: "project-art--flower",
+    title: "Lorem ipsum I",
+    type: "Oil on linen",
+    blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    tone: "olive",
   },
   {
     number: "02",
-    title: "Common Ground",
-    category: "Digital experience · Community",
-    year: "2025",
-    image: "/projects/common-ground.svg",
-    alt: "A playful community garden website concept",
-    className: "project-art--garden",
+    title: "Subhead title",
+    type: "Charcoal study",
+    blurb: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tone: "red",
   },
   {
     number: "03",
-    title: "Soft Hours",
-    category: "Art direction · Editorial",
-    year: "2024",
-    image: "/projects/soft-hours.svg",
-    alt: "An editorial art direction concept in warm colors",
-    className: "project-art--editorial",
+    title: "Body text title",
+    type: "Gouache + ink",
+    blurb: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    tone: "stone",
   },
 ];
 
 export const metadata = {
   title: "Home",
-  description:
-    "A selection of thoughtful identities and digital experiences by Soph Fusco.",
+  description: "Traditional artist portfolio with studies, commissions, and journal entries.",
 };
 
 export default function Home() {
   return (
-    <main>
-      <section className="hero page-wrap" id="home" aria-labelledby="hero-title">
+    <main id="top" className="home-page">
+      <section className="hero page-wrap" aria-labelledby="hero-title">
         <div className="hero-copy">
           <p className="eyebrow">
             <span className="eyebrow-mark" aria-hidden="true">
-              ✳
+              ✦
             </span>
-            Independent designer & creative partner
+            Traditional artist / studio practice
           </p>
+
           <h1 id="hero-title">
-            Good ideas,
+            Quiet forms,
             <br />
-            <span>grown with care.</span>
+            <span>kept in motion.</span>
           </h1>
+
           <p className="hero-description">
-            I’m Soph — a designer shaping thoughtful identities and digital
-            experiences for people doing good things.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris.
           </p>
+
           <div className="hero-actions">
-            <Link className="button button--dark" href="#projects">
-              Explore selected work <span aria-hidden="true">↓</span>
+            <Link className="button button--dark" href="#works">
+              View selected works <span aria-hidden="true">↓</span>
             </Link>
             <Link className="text-link" href="/about">
-              A little about me <span aria-hidden="true">↗</span>
+              Studio notes <span aria-hidden="true">↗</span>
             </Link>
           </div>
+
           <p className="hero-note">
             <span className="availability-dot" aria-hidden="true" />
-            Available for select projects
+            Available for commissions and studies
           </p>
         </div>
-        <div className="hero-visual">
+
+        <div className="hero-visual" aria-label="Abstract portrait panel">
           <div className="hero-visual-top">
-            <span>PORTFOLIO NOTES</span>
+            <span>STUDIO</span>
             <span>2026</span>
           </div>
-          <Image
-            className="hero-image"
-            src="/projects/hero-flower.svg"
-            alt="A bright, hand-drawn flower against a warm pink background"
-            fill
-            priority
-            sizes="(max-width: 699px) 100vw, (max-width: 1099px) 44vw, 42vw"
-          />
+
+          <div className="art-panel art-panel--portrait">
+            <div className="art-panel__shape art-panel__shape--one" />
+            <div className="art-panel__shape art-panel__shape--two" />
+            <div className="art-panel__shape art-panel__shape--three" />
+          </div>
+
           <span className="hero-sticker" aria-hidden="true">
-            made with
+            Stillness
             <br />
-            intention
-            <span>♥</span>
+            in color
           </span>
-          <span className="hero-visual-caption">
-            A practice rooted in curiosity
-          </span>
+
+          <span className="hero-visual-caption">Subhead caption text</span>
         </div>
-        <a className="scroll-cue" href="#projects">
-          <span aria-hidden="true">↓</span> Scroll to explore
-        </a>
       </section>
 
-      <section
-        className="projects-section section-wrap"
-        id="projects"
-        aria-labelledby="projects-title"
-      >
+      <section className="projects-section section-wrap" id="works" aria-labelledby="works-title">
         <div className="section-heading">
           <div>
-            <p className="eyebrow section-kicker">01 / SELECTED WORK</p>
-            <h2 id="projects-title">
-              A few things <em>in bloom.</em>
+            <p className="eyebrow section-kicker">Selected works</p>
+            <h2 id="works-title">
+              Latest <em>studies.</em>
             </h2>
           </div>
           <p className="section-intro">
-            A small collection of ideas made tangible, with a little room for
-            play.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
 
         <div className="project-grid">
-          {projects.map((project) => (
-            <article className="project-card" key={project.number}>
-              <div className={`project-art ${project.className}`}>
-                <Image
-                  src={project.image}
-                  alt={project.alt}
-                  fill
-                  sizes="(max-width: 699px) 100vw, (max-width: 1099px) 50vw, 33vw"
-                />
-                <span className="project-number">{project.number}</span>
+          {works.map((work) => (
+            <article className="project-card" key={work.number}>
+              <div className={`project-art project-art--${work.tone}`}>
+                <span className="project-number">{work.number}</span>
                 <span className="project-open" aria-hidden="true">
                   ↗
                 </span>
               </div>
+
               <div className="project-details">
                 <div>
-                  <h3>{project.title}</h3>
-                  <p>{project.category}</p>
+                  <h3>{work.title}</h3>
+                  <p>{work.type}</p>
                 </div>
-                <span className="project-year">{project.year}</span>
+                <span className="project-year">2026</span>
               </div>
+
+              <p className="project-blurb">{work.blurb}</p>
             </article>
           ))}
         </div>
-        <p className="projects-note">
-          Starter projects — replace these examples with your own work.
-        </p>
       </section>
 
-      <section className="home-about" aria-labelledby="home-about-title">
+      <section className="home-about" id="studies" aria-labelledby="study-title">
         <div className="home-about-inner section-wrap">
           <span className="about-doodle" aria-hidden="true">
-            ✳
+            ✦
           </span>
-          <p className="eyebrow">02 / A LITTLE ABOUT ME</p>
-          <h2 id="home-about-title">
-            Good work starts with
+          <p className="eyebrow">Practice</p>
+          <h2 id="study-title">
+            Working with
             <br />
-            <em>good questions.</em>
+            <em>slow observation.</em>
           </h2>
           <div className="home-about-bottom">
             <p>
-              I bring big-picture thinking and an eye for the little details to
-              every collaboration. Thoughtful by nature, curious by default.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              posuere, risus et luctus posuere, nibh lectus sagittis ligula,
+              vitae blandit justo lorem vitae nulla.
             </p>
             <Link className="button button--light" href="/about">
-              More about Soph <span aria-hidden="true">↗</span>
+              Read the studio notes <span aria-hidden="true">↗</span>
             </Link>
           </div>
         </div>
