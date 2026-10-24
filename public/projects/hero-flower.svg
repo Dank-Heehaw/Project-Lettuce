@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ef9879"/>
+      <stop offset="1" stop-color="#db725f"/>
+    </linearGradient>
+    <linearGradient id="petal" x1="0" y1="0" x2="0.8" y2="1">
+      <stop stop-color="#f9d6b6"/>
+      <stop offset="1" stop-color="#efa68e"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h900v1000H0z"/>
+  <circle cx="738" cy="190" r="98" fill="#f4bc86" opacity=".85"/>
+  <path d="M0 785c166-89 310-74 467-10 144 59 288 56 433-30v255H0z" fill="#d86859" opacity=".56"/>
+  <path d="M448 562c-17 148-44 275-122 404m136-361c88 77 178 140 314 152" fill="none" stroke="#284632" stroke-linecap="round" stroke-width="24"/>
+  <path d="M354 690c-148-9-181-87-166-143 89-8 156 36 166 143Zm143-9c115-74 200-29 221 19-64 71-147 79-221-19Z" fill="#667b52"/>
+  <path d="M454 493c-141-26-152-134-92-183 76-10 122 45 92 183Zm29-1c-74-126-7-207 75-191 54 51 38 119-75 191Zm-32 19c-109 96-201 43-190-39 47-61 116-54 190 39Zm47 4c136-48 194 35 151 105-69 34-125 2-151-105Z" fill="url(#petal)" stroke="#263e32" stroke-linejoin="round" stroke-width="9"/>
+  <circle cx="465" cy="499" r="61" fill="#e9c563" stroke="#263e32" stroke-width="9"/>
+  <circle cx="445" cy="482" r="6" fill="#263e32"/>
+  <circle cx="479" cy="476" r="6" fill="#263e32"/>
+  <circle cx="491" cy="507" r="6" fill="#263e32"/>
+  <circle cx="462" cy="522" r="6" fill="#263e32"/>
+  <path d="M276 340c-41-91 5-170 45-209m223 80c51-21 98-11 134 17" fill="none" stroke="#263e32" stroke-linecap="round" stroke-width="10"/>
+  <path d="m334 121 12 22 24 3-18 16 5 24-22-12-21 12 4-24-18-16 25-3z" fill="#f3dd92"/>
+  <path d="m667 328 8 15 17 2-12 12 3 17-16-8-15 8 3-17-13-12 18-2z" fill="#263e32"/>
+</svg>

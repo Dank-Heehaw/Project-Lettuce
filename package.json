@@ -1,0 +1,40 @@
+{
+  "name": "project-lettuce",
+  "version": "1.0.0",
+  "description": "Portfolio of Soph Fusco",
+  "homepage": "https://github.com/Dank-Heehaw/Project-Lettuce#readme",
+  "bugs": {
+    "url": "https://github.com/Dank-Heehaw/Project-Lettuce/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dank-Heehaw/Project-Lettuce.git"
+  },
+  "license": "private",
+  "author": "Waheed Khan - © 2026 Soph Fusco",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "gsap": "^3.15.0",
+    "next": "16.4.2",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
