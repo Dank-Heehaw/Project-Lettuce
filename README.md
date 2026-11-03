@@ -1,6 +1,6 @@
 # Project-Lettuce
 
-Portfolio of Soph Fusco.
+Starter template for the Project Lettuce application.
 
 ## Development
 
