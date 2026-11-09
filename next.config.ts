@@ -1,9 +1,13 @@
+import path from "path";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
+  sassOptions: {
+    loadPaths: [path.join(process.cwd(), "app/styles")],
+    additionalData: `@use "variables" as *;\n`,
+  },
   turbopack: {
     rules: {
       "*.css": {

@@ -1,0 +1,25 @@
+.skip {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  transform: translateY(-160%);
+  padding: 8px 12px;
+  background: $paper-2;
+  color: $ink;
+}
+
+.skip:focus {
+  transform: none;
+}
+
+.site-footer {
+  border-top: 1px solid $line;
+}
+
+.site-footer p {
+  width: min(100% - 32px, 40rem);
+  margin: 0 auto;
+  padding: 20px 0 28px;
+  color: $muted;
+  font-size: 0.92rem;
+}

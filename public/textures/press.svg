@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="960" viewBox="0 0 720 960">
+  <defs>
+    <filter id="grit" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" seed="4" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.96  0 0 0 0 0.93  0 0 0 0 0.88  0 0 0 0.45 -0.28"/>
+    </filter>
+    <filter id="streak" x="-10%" y="0" width="120%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.35" numOctaves="2" seed="11" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1.6 -0.7"/>
+    </filter>
+  </defs>
+  <rect width="720" height="960" fill="#0c0b0a"/>
+  <rect width="720" height="960" filter="url(#streak)" opacity="0.85"/>
+  <g fill="#161311" opacity="0.9">
+    <rect x="36" y="0" width="14" height="960"/>
+    <rect x="58" y="0" width="4" height="960"/>
+    <rect x="188" y="0" width="22" height="960"/>
+    <rect x="214" y="0" width="3" height="960"/>
+    <rect x="390" y="0" width="9" height="960"/>
+    <rect x="520" y="0" width="16" height="960"/>
+    <rect x="612" y="0" width="7" height="960"/>
+    <rect x="668" y="0" width="28" height="960"/>
+  </g>
+  <g fill="#ff2a1a">
+    <rect x="248" y="0" width="5" height="960" opacity="0.55"/>
+    <rect x="470" y="120" width="3" height="640" opacity="0.4"/>
+    <rect x="96" y="0" width="2" height="960" opacity="0.35"/>
+  </g>
+  <rect width="720" height="960" filter="url(#grit)"/>
+</svg>

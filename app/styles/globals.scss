@@ -1,0 +1,67 @@
+:root {
+  --paper: #{$paper};
+  --paper-2: #{$paper-2};
+  --stone: #{$stone};
+  --ink: #{$ink};
+  --muted: #{$muted};
+  --wine: #{$wine};
+  --wine-deep: #{$wine-deep};
+  --sage: #{$sage};
+  --sage-deep: #{$sage-deep};
+  --red: #{$red};
+  --ember: #{$ember};
+  --blue: #{$blue};
+  --line: #{$line};
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: $paper;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  margin: 0;
+  background-color: $paper;
+  background-image: url("/textures/press.svg?v=2");
+  background-size: 720px 960px;
+  color: $ink;
+  font-family: var(--font-slab), Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid $blue;
+  outline-offset: 3px;
+}
+
+::selection {
+  background: rgba(255, 77, 106, 0.35);
+  color: $ink;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
