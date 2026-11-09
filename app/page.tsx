@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import "./page.scss";
 
 const paint = ["#22e1ff", "#3b4bff", "#9b3dff", "#ff2f86", "#ff3a1a", "#ff9a1a", "#ffe14a", "#3dff9a"];
@@ -10,7 +11,10 @@ function Logo() {
         char === " " ? (
           " "
         ) : (
-          <span key={index} style={{ "--paint": paint[color++ % paint.length] }}>
+          <span
+            key={index}
+            style={{ "--paint": paint[color++ % paint.length] } as CSSProperties}
+          >
             {char}
           </span>
         ),
